@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Usr-Y3-Uvq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video Controller-->
+        <scene sceneID="uwZ-OZ-kJ1">
+            <objects>
+                <viewController id="Usr-Y3-Uvq" customClass="VideoController" customModule="SwiftyCamShaik" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PMl-yw-g8C"/>
+                        <viewControllerLayoutGuide type="bottom" id="TXk-Sg-Jg2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l4X-qf-VAa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tj7-SV-n6b">
+                                <rect key="frame" x="70" y="598" width="30" height="23"/>
+                                <color key="backgroundColor" red="0.57151472569999995" green="0.74307638409999999" blue="0.12683251500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="dT0-pz-wa9"/>
+                                </constraints>
+                                <state key="normal" image="flipCamera"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApX-bt-3vw">
+                                <rect key="frame" x="275" y="595" width="18" height="30"/>
+                                <color key="backgroundColor" red="0.17888611560000001" green="0.77418333289999997" blue="0.87308615450000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LMI-Fh-Zo9"/>
+                                    <constraint firstAttribute="width" constant="18" id="MdA-cp-qVr"/>
+                                </constraints>
+                                <state key="normal" image="flashOutline"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoSide" translatesAutoresizingMaskIntoConstraints="NO" id="eYV-DQ-VpJ">
+                                <rect key="frame" x="10" y="30" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="QF2-su-juD"/>
+                                    <constraint firstAttribute="height" constant="30" id="dRh-bR-0ar"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BH4-vl-bs9">
+                                <rect key="frame" x="332" y="30" width="35" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="UgT-hr-y8b"/>
+                                    <constraint firstAttribute="height" constant="30" id="udd-ym-bAU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fu8-c1-t9u">
+                                <rect key="frame" x="115" y="595" width="152" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.76471532529999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordBtnTapped:" destination="Usr-Y3-Uvq" eventType="touchUpInside" id="67y-45-aZG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello welcome to my gitBlog please do follow my blogs shaikBaji1506" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VM-wp-X22">
+                                <rect key="frame" x="50" y="28" width="275" height="50"/>
+                                <color key="backgroundColor" red="0.17888611560000001" green="0.77418333289999997" blue="0.87308615450000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SdL-o7-xPA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BH4-vl-bs9" firstAttribute="top" secondItem="PMl-yw-g8C" secondAttribute="bottom" constant="10" id="0be-F0-l6G"/>
+                            <constraint firstItem="Fu8-c1-t9u" firstAttribute="leading" secondItem="Tj7-SV-n6b" secondAttribute="trailing" constant="15" id="GZ6-ci-4I7"/>
+                            <constraint firstAttribute="trailing" secondItem="4VM-wp-X22" secondAttribute="trailing" constant="50" id="HYS-Qd-PMl"/>
+                            <constraint firstItem="WvM-NQ-lHb" firstAttribute="trailing" secondItem="ApX-bt-3vw" secondAttribute="trailing" constant="82" id="Mhb-SV-117"/>
+                            <constraint firstItem="TXk-Sg-Jg2" firstAttribute="top" secondItem="ApX-bt-3vw" secondAttribute="bottom" constant="42" id="TN4-mV-cEe"/>
+                            <constraint firstItem="ApX-bt-3vw" firstAttribute="leading" secondItem="Fu8-c1-t9u" secondAttribute="trailing" constant="8" symbolic="YES" id="Tdb-VO-La4"/>
+                            <constraint firstItem="ApX-bt-3vw" firstAttribute="centerY" secondItem="Tj7-SV-n6b" secondAttribute="centerY" id="Vz7-8H-aNF"/>
+                            <constraint firstItem="4VM-wp-X22" firstAttribute="top" secondItem="PMl-yw-g8C" secondAttribute="bottom" constant="8" id="W98-V1-SlA"/>
+                            <constraint firstItem="eYV-DQ-VpJ" firstAttribute="leading" secondItem="l4X-qf-VAa" secondAttribute="leading" constant="10" id="aoi-CS-3qT"/>
+                            <constraint firstItem="Tj7-SV-n6b" firstAttribute="leading" secondItem="WvM-NQ-lHb" secondAttribute="leading" constant="70" id="b55-aC-JlT"/>
+                            <constraint firstItem="4VM-wp-X22" firstAttribute="leading" secondItem="eYV-DQ-VpJ" secondAttribute="trailing" constant="10" id="lbQ-TA-Xfi"/>
+                            <constraint firstAttribute="trailing" secondItem="BH4-vl-bs9" secondAttribute="trailing" constant="8" id="oh1-aw-NQt"/>
+                            <constraint firstItem="eYV-DQ-VpJ" firstAttribute="top" secondItem="PMl-yw-g8C" secondAttribute="bottom" constant="10" id="xnA-xt-IVG"/>
+                            <constraint firstItem="ApX-bt-3vw" firstAttribute="top" secondItem="Fu8-c1-t9u" secondAttribute="top" id="yrS-M2-4o7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WvM-NQ-lHb"/>
+                    </view>
+                    <connections>
+                        <outlet property="recordButton" destination="Fu8-c1-t9u" id="IQj-tC-da0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ded-a5-9pG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="21"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flashOutline" width="16" height="16"/>
+        <image name="flipCamera" width="16" height="16"/>
+        <image name="videoSide" width="16" height="16"/>
+    </resources>
+</document>
